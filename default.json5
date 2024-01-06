@@ -1,0 +1,10 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		":automergeMinor",
+		// https://docs.renovatebot.com/presets-config/#configrecommended
+		"config:recommended",
+		// https://docs.renovatebot.com/presets-regexManagers/#regexmanagersdockerfileversions
+		"regexManagers:dockerfileVersions",
+	]
+}
