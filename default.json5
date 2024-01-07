@@ -1,9 +1,12 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
+		":assignAndReview(toanju)",
 		":automergeMinor",
+		":pinDevDependencies",
 		// https://docs.renovatebot.com/presets-config/#configrecommended
 		"config:recommended",
+		"helpers:pinGitHubActionDigests",
 		// https://docs.renovatebot.com/presets-regexManagers/#regexmanagersdockerfileversions
 		"regexManagers:dockerfileVersions",
 	]
