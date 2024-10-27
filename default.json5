@@ -10,5 +10,9 @@
 		"helpers:pinGitHubActionDigests",
 		// https://docs.renovatebot.com/presets-regexManagers/#regexmanagersdockerfileversions
 		"regexManagers:dockerfileVersions",
+		// https://docs.renovatebot.com/presets-default/#disableratelimiting
+		":disableRateLimiting",
+		// https://docs.renovatebot.com/presets-default/#rebasestaleprs
+		":rebaseStalePrs",
 	]
 }
