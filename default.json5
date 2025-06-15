@@ -2,7 +2,7 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
 		":approveMajorUpdates",
-		":assignAndReview(toanju)",
+		":assignee(toanju)",
 		":automergeMinor",
 		":pinDevDependencies",
 		// https://docs.renovatebot.com/presets-config/#configrecommended
