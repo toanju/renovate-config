@@ -8,8 +8,10 @@
 		// https://docs.renovatebot.com/presets-config/#configrecommended
 		"config:recommended",
 		"helpers:pinGitHubActionDigests",
-		// https://docs.renovatebot.com/presets-regexManagers/#regexmanagersdockerfileversions
-		"regexManagers:dockerfileVersions",
+		// https://docs.renovatebot.com/presets-customManagers/#custommanagersdockerfileversions
+		"customManagers:dockerfileVersions",
+    // https://docs.renovatebot.com/presets-docker/#dockerpindigests
+    "docker:pinDigests",
 		// https://docs.renovatebot.com/presets-default/#disableratelimiting
 		":disableRateLimiting",
 		// https://docs.renovatebot.com/presets-default/#rebasestaleprs
