@@ -1,6 +1,23 @@
+// vim: set ft=jsonc:
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-     "github>toanju/renovate-config:default.json5"
+    ":approveMajorUpdates",
+    ":assignee(toanju)",
+    ":automergeMinor",
+    ":pinDevDependencies",
+    // https://docs.renovatebot.com/presets-config/#configrecommended
+    "config:recommended",
+    "helpers:pinGitHubActionDigests",
+    // https://docs.renovatebot.com/presets-customManagers/#custommanagersdockerfileversions
+    "customManagers:dockerfileVersions",
+    // https://docs.renovatebot.com/presets-docker/#dockerpindigests
+    "docker:pinDigests",
+    // https://docs.renovatebot.com/presets-default/#disableratelimiting
+    ":disableRateLimiting",
+    // https://docs.renovatebot.com/presets-default/#rebasestaleprs
+    ":rebaseStalePrs",
+    // https://docs.renovatebot.com/presets-default/#configmigration
+    ":configMigration"
   ]
 }
